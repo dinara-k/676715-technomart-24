@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Динара](https://up.htmlacademy.ru/htmlcss/24/user/676715).
-* Наставник: `Неизвестно`.
+* Студент: [Динара Ходжаева](https://up.htmlacademy.ru/htmlcss/24/user/676715).
+* Наставник:  [Сергей Шершнев](https://up.htmlacademy.ru/htmlcss/24/user/587797).
 
 ---
 
