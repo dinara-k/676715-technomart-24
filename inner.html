@@ -72,7 +72,49 @@
 		
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">BOSCH</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                <label for="filter-interskol">ИНТЕРСКОЛ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">MAKITA</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">DEWALT</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" id="filter-accumulator" checked>
+                <label for="filter-accumulator">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" id="filter-network">
+                <label for="filter-network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">
+            Показать
+          </button>
+        </form>
 		</section>
       
 	  <!-- Доп.блок будут сверстан в других лекциях-->	
@@ -308,9 +350,9 @@
 			</div>			
 			<div class="footer-social">				
 				<ul>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+					<li><a class="social-button" href="#" aria-label="Страница Техномарта во Вконтакте">Вконтакте</a></li>
+					<li><a class="social-button" href="#" aria-label="Страница Техномарта в Фейсбук">Фейсбук</a></li>
+					<li><a class="social-button" href="#" aria-label="Страница Техномарта в Инстаграм">Инстаграм</a></li>
 				</ul>
 			</div>			
 			<div class="footer-feedback">
@@ -328,8 +370,13 @@
 
 	<section class="modal modal-add_to_cart">
 	    <h2 class="pop-up_title">Товар добавлен в корзину!</h2>
-	    <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+	    <div>
+			<a href="#">Оформить заказ</a>
+			<a href="#">Продолжить покупки</a>
+		</div>
+        <button class="modal-close" type="button">
+			Закрыть
+        </button>
     </section> 
   </body>
 </html>
